@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+	<head>
+		<title>La Boulangerie Jules & John</title>
+		<meta charset="utf-8" lang="fr">
+		<meta name="description" content="La Boulangerie Jules & John">
+		<link rel="stylesheet" href="TP4_styles.css" type="text/css"/>
+		<link rel="stylesheet" href="TP4_1250_styles.css" media="screen and (max-device-width: 1250px)" type="text/css"/>
+		<link rel="stylesheet" href="TP4_800_styles.css" media="screen and (max-device-width: 800px)" type="text/css"/>
+		<link rel="stylesheet" href="TP4_320_styles.css" media="screen and (max-device-width: 320px)" type="text/css"/>
+	</head>
+
+
+	
+	<body>
+	
+		
+		<div id="content">
+			
+			<!--Entête : logo-nav-->
+			<div id="header">
+					
+					<!--logo-->
+					<img src="logo/logo.png" alt="logo"/>
+					
+					<!--nav-->
+					<!--ATTENTION a:active NE FONTIONNE PAS...-->
+					<ul>
+						<li id="accueil"><a href="TP4_index.html">Accueil</a></li>
+						<li><a href="TP4_produits.html">Nos produits</a></li>
+						<li><a href="TP4_contacts.html"id="active">Contacts<a/></li>
+					</ul>
+			</div>		
+					
+			<!--Bandeau-->
+			<div id="bandeau">
+				<div id="contenu">
+					<img id="region" src="images/produitsregionaux.png" alt="produits régionaux"/> <!--image gauche-->
+					<p>John c'est le cuisinier, Jules le boulanger<br/>Ensemble, ils vont vous régaler<br/><span id="carte">- Contact -</span></p> <!--texte central-->
+					<img id="boeuf" src="images/100-pur-boeuf_web.jpg" alt="100% pur boeuf"/> <!--image droite-->
+				</div>
+			</div>	
+					
+			<form action="TP4_formulaire.html" methode="post" name="contact" id="contact" onsubmit="return validateForm()">
+			
+				<section id="formulaire">
+					<h1>Contactez-nous</h1>
+
+					<article class="blockid">
+						<label for="civilite"></label>
+						<select name="civilite="nom" id="civilite">
+							<option value="0">Monsieur</option>
+							<option value="1">Madame</option>
+						</select>
+					</article>
+						
+					<article class="blockid">
+						<label for="nom"></label>
+						<input type="text" name="nom" id="nom" placeholder="Votre nom" autofocus required autocomplete />
+					</article>
+				
+					<article class="blockid">
+						<label for="prenom"></label>
+						<input type="text" name="prenom" id="prenom" placeholder="Votre prénom" autocomplete />
+					</article>
+					
+					<article class="blockid">
+						<label " for="email"></label>
+						<input type="text" name="email" id="email" placeholder="email@exemple.fr" autocomplete />
+					</article>
+				
+					
+					<!-- attention à la taille de la texta area -->
+					<h2>Votre message</h2>
+					<article class="blockid">
+						<label for="commentaires"></label>
+						<textarea rows="10" cols="70" placeholder="Ecrivez votre texte ici" id="commentaires">
+						</textarea>
+										
+						<label for="valid"></label>
+						<input type="button" value="Validez" id="valid">
+					</article>	
+				
+				</section>
+				
+				
+
+					
+			<!--footer-->
+			<section id="footer">
+			
+				<ul>
+					<li id="acfoot"><a href="TP4_index.html">Accueil</a></li>
+					<li id="acprod"><a href="TP4_produits.html">Nos produits</a></li>
+					<li><a href="TP4_contacts.html">Contacts</a></li>
+					<li><a href="TP4_mentions légales.html">Mentions légales</a></li>
+					<li id="image"><a href="TP4_contacts.html"><img src="images/localisation.jpg" alt=" Localisez-nous !"/></a></li>
+				</ul>
+
+
+			
+			</div>
+		</div>
+	
+	</body>
+
+	
+
+</html>
+
+
+
+	
